@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
+    
+    <script>
+        let data = {{data[0]|tojson}}
+        let max = {{data[1]|tojson}}
+    </script>
+
+    <div id="data_points" class="container">
+        <div class="row">
+            <div class="col-md-12" id="name_here"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8" id="ui_here"></div>
+            <div class="col-md-4" id="details_here"></div>
+        </div>
+    </div>
+    <br>
+    <div id="move_buttons">
+        <button id="prev_button" type="button">Previous</button>
+        <button id="next_button" type="button">Next</button>
+    </div>
+
+
+
+{% endblock %}
