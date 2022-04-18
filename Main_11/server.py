@@ -9,19 +9,88 @@ from quiz_data import *
 
 app = Flask(__name__)
 
+keys_max=4
+keys = {"1": {"id": 1,
+              "title": "Learn G Major Key",
+              "type": "keys",
+              "description": "GMajorDescription",
+              },
+
+        "2": {"id": 2,
+              "title": "Learn A Major Key",
+              "type": "keys",
+              "description": "AMajorDescription",
+              },
+
+        "3": {"id": 3,
+              "title": "Learn B Major Key",
+              "type": "keys",
+              "description": "BMajorDescription",
+              },
+
+        "4": {"id": 4,
+              "title": "Learn E Major Key",
+              "type": "keys",
+              "description": "EMajorDescription",
+              }
+        }
+
+scales_max=4
+scales = {"1": {"id": 1,
+                "title": "Learn G Major Scale",
+                "type": "scales",
+                "description": "GMajorDescription",
+                },
+
+          "2": {"id": 2,
+                "title": "Learn A Major Scale",
+                "type": "scales",
+                "description": "AMajorDescription",
+                },
+
+          "3": {"id": 3,
+                "title": "Learn B Major Scale",
+                "type": "scales",
+                "description": "BMajorDescription",
+                },
+
+          "4": {"id": 4,
+                "title": "Learn E Major Scale",
+                "type": "scales",
+                "description": "EMajorDescription",
+                }
+          }
+
+
 @app.route("/")
 def base_url():
     return redirect("/home")
+
+@app.route('/keys/<id>')
+def temp(id=None):
+    global keys
+    datas = keys[id]
+    return render_template('learn.html', data=[datas, keys_max])
+
+
+@app.route('/scales/<id>')
+def scale(id=None):
+    global scales
+    datas = scales[id]
+    return render_template('learn.html', data=[datas, scales_max])
 
 @app.route("/home")
 def home():
     return render_template("index.html")
 
+'''
 @app.route("/learn/<page>")
 def learn(page):
     # goal is to return the back-end content for the corresponding page
     # should integrate returned content using jQuery or jinja
     return redirect("/home")
+    
+'''
 
 # post doesn't seem entirely necessary here tbh
 @app.route("/quiz/<question>", methods=["GET", "POST"])
