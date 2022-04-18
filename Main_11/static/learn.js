@@ -2,9 +2,14 @@ $(document).ready(function(){
     display_headers(data)
     display_remaining_data(data)
 
-    if(data['id'] == max){
+        if(data['id'] == max && data['type'] == 'scales'){
         $("#next_button").empty()
         $("#next_button").text("Go to Quiz!")
+    }
+
+    if(data['id'] == max && data['type'] == 'keys'){
+        $("#next_button").empty()
+        $("#next_button").text("Learn Scales!")
     }
 
     $("#next_button").click(function () {
@@ -12,7 +17,12 @@ $(document).ready(function(){
             window.location.replace('http://127.0.0.1:5000/' + String(data['type']) + '/' + String(data['id'] + 1))
         }
         else{
-            window.location.replace('http://127.0.0.1:5000/quiz/1')
+            if(data['type'] == 'keys'){
+                window.location.replace('http://127.0.0.1:5000/scales/1')
+            }
+            if(data['type'] == 'scales'){
+                window.location.replace('http://127.0.0.1:5000/quiz/1')
+            }
         }
     })
 
