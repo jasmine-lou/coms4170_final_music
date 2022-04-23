@@ -16,10 +16,12 @@ questions = {
         "G" : {
             "key_media": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/G-major_e-minor.svg/800px-G-major_e-minor.svg.png",
             "choices": ["G", "C", "Ab", "F#"],
+            "correct": "0"
         },
         "Bb" : {
             "key_media": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B-flat-major_g-minor.svg/800px-B-flat-major_g-minor.svg.png",
             "choices": ["Eb", "Bb", "F", "D"],
+            "correct": "0"
         }
     },
     # make denoted key
@@ -27,6 +29,7 @@ questions = {
         "C" : {
             "key_media": "C Major",
             "choices": ["insert keysig image for button", "insert keysig image for button", "insert keysig image for button", "insert keysig image for button"],
+            "correct": "0"
         }
     },
     # choose key of scale
@@ -34,10 +37,12 @@ questions = {
         "G" : {
             "key_media": "https://upload.wikimedia.org/score/a/r/ary0vhsure9oohc1fpoii4c3630031k/ary0vhsu.mp3",
             "choices": ["G", "C", "Ab", "F#"],
+            "correct": "0"
         },
         "Bb" : {
             "key_media": "https://upload.wikimedia.org/score/7/j/7jec9d1y1u6y5zbwrlyxmri8hx4l3cd/7jec9d1y.mp3",
             "choices": ["Eb", "Bb", "F", "D"],
+            "correct": "0"
         }
     },
     # choose key of melody
@@ -45,10 +50,12 @@ questions = {
         "G" : {
             "key_media": "https://upload.wikimedia.org/score/a/r/ary0vhsure9oohc1fpoii4c3630031k/ary0vhsu.mp3",
             "choices": ["G", "C", "Ab", "F#"],
+            "correct": "0"
         },
         "Bb" : {
             "key_media": "https://upload.wikimedia.org/score/7/j/7jec9d1y1u6y5zbwrlyxmri8hx4l3cd/7jec9d1y.mp3",
             "choices": ["Eb", "Bb", "F", "D"],
+            "correct": "0"
         }
     }
 }
