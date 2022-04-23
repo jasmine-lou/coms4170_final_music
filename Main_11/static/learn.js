@@ -1,7 +1,6 @@
 $(document).ready(function(){
     display_headers(data)
     display_remaining_data(data)
-
     $("#display_page_number").text("Page " + data['id'] + '/' + max)
 
     if(data['id'] == max && data['type'] == 'scales'){
@@ -52,12 +51,4 @@ $(document).ready(function(){
 function display_headers(data){
     $("#name_here").append(data["title"])
     $("#details_here").append(data["description"])
-}
-
-function display_remaining_data(data){
-    /*$("#ui_here").append("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt " +
-        "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi " +
-        "ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum " +
-        "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia " +
-        "deserunt mollit anim id est laborum.")*/
 }

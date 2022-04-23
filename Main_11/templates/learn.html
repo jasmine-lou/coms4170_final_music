@@ -6,15 +6,14 @@
     <script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
     
     <script>
-        let data = {{data[0]|tojson}}
-        let max = {{data[1]|tojson}}
+        let data = {{data[0]|tojson}};
+        let max = {{data[1]|tojson}};
     </script>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12" id="name_here"></div>
         </div>
-        <br>
         <div id="data_points">
             <div class="row">
                 <div class="col-1"></div>
@@ -27,11 +26,28 @@
                 <div class="col-1"></div>
             </div>
         </div>
-
         <div id="move_buttons">
             <button id="prev_button" type="button">Previous</button>
             <span id="display_page_number"></span>
             <button id="next_button" type="button">Next</button>
+        </div>
+        <br>
+        <div id="white-keys">
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+        </div>
+        <div id="black-keys" style="margin: -123px 17px;">
+            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
         </div>
     </div>
 
