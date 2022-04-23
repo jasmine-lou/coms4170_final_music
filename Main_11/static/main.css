@@ -1,3 +1,16 @@
-#buttons {
+#move_buttons {
     padding-top: 20px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#display_page_number{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#next_button, #prev_button{
+    width: 130px;
 }
