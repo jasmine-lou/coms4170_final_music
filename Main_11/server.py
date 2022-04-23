@@ -9,7 +9,7 @@ from quiz_data import *
 
 app = Flask(__name__)
 
-keys_max=4
+keys_max = 4
 keys = {"1": {"id": 1,
               "title": "Learn G Major Key",
               "type": "keys",
@@ -35,7 +35,7 @@ keys = {"1": {"id": 1,
               }
         }
 
-scales_max=4
+scales_max = 4
 scales = {"1": {"id": 1,
                 "title": "Learn G Major Scale",
                 "type": "scales",
@@ -66,6 +66,7 @@ scales = {"1": {"id": 1,
 def base_url():
     return redirect("/home")
 
+
 @app.route('/keys/<id>')
 def temp(id=None):
     global keys
@@ -79,25 +80,18 @@ def scale(id=None):
     datas = scales[id]
     return render_template('learn.html', data=[datas, scales_max])
 
+
 @app.route("/home")
 def home():
     return render_template("index.html")
 
-'''
-@app.route("/learn/<page>")
-def learn(page):
-    # goal is to return the back-end content for the corresponding page
-    # should integrate returned content using jQuery or jinja
-    return redirect("/home")
-    
-'''
 
 # post doesn't seem entirely necessary here tbh
 @app.route("/quiz/<question>", methods=["GET", "POST"])
 def quiz(question):
     if request.method == "POST":
         None
-    
+
     else:
         if question in ["1", "2", "3", "4"]:
             # return ("This should be question %s" % question)
@@ -117,5 +111,6 @@ def quiz(question):
         else:
             return ("This is not a valid question number")
 
+
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(debug=True)
