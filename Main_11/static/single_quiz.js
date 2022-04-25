@@ -40,6 +40,7 @@ function check() {
         if(question == 4) {
             // link to results
             $("#buttons").append(`<a class="btn btn-primary" id="results" role="button">Results</a>`)
+            $("#results").css({width: "150px"})
             $("#results").on("click", function() {
                 window.location.replace(`http://127.0.0.1:5000/results/${num_correct}`)
             })
@@ -47,6 +48,7 @@ function check() {
         else {
             // go to next question
             $("#buttons").append(`<a class="btn btn-primary" id="next" role="button">Next</a>`)
+            $("#next").css({width: "150px"})
             $("#next").on("click", function() {
                 question++
                 // if valid question count
@@ -106,6 +108,7 @@ function view_quiz(question) {
             $("#media").append(`<img src='${media}'>`)
             $("#buttons").append(`<a class="btn btn-primary" id="check" role="button">Check</a>`)
             check()
+            $("#check").css({width: "150px"})
 
             // add radio button values (text and data tags)
             $("#btnradio1").data("choice", choices[0])
@@ -123,6 +126,7 @@ function view_quiz(question) {
             $("#question").text(prompt)
             $("#buttons").append(`<a class="btn btn-primary" id="check" role="button">Check</a>`)
             check()
+            $("#check").css({width: "150px"})
 
             // add radio button values
             // choices are images
@@ -143,6 +147,7 @@ function view_quiz(question) {
             $("#media").append(`<audio controls><source src='${media}'></audio>`)
             $("#buttons").append(`<a class="btn btn-primary" id="check" role="button">Check</a>`)
             check()
+            $("#check").css({width: "150px"})
 
             // add radio button values
             $("#btnradio1").data("choice", choices[0])
@@ -160,6 +165,7 @@ function view_quiz(question) {
             $("#media").append(`<audio controls><source src='${media}'></audio>`)
             $("#buttons").append(`<a class="btn btn-primary" id="check" role="button">Check</a>`)
             check()
+            $("#check").css({width: "150px"})
 
             // add radio button values
             $("#btnradio1").data("choice", choices[0])

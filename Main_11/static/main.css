@@ -11,6 +11,9 @@
     padding-right: 20px;
 }
 
-#next_button, #prev_button{
-    width: 130px;
+#buttons {
+    margin: auto;
+    text-align: center;
 }
+
+
