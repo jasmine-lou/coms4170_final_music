@@ -120,13 +120,24 @@ def quiz(question):
         else:
             return ("This is not a valid question number")
 
-@app.route("/quiz/results", methods=["GET", "POST"])
-def result():
+@app.route("/quiz", methods=["GET", "POST"])
+def full_quiz():
     if request.method == "POST":
         None
+    
     else:
-        return render_template("results.html", num_correct = 0)
+        # generate randomized quiz json
+        quiz_content = []
+        for question in questions:
+            random_question = random.choice(list(questions[question]))
+            quiz_content.append(questions[question][random_question])
+        print(quiz_content, type(quiz_content))
+        return render_template("single_quiz.html", quiz_content=quiz_content)
+        #return json.dumps(quiz)
 
+@app.route("/results/<correct>")
+def results(correct):
+    return render_template("results.html", correct=correct)
 
 if __name__ == "__main__":
     app.run(debug = True)
