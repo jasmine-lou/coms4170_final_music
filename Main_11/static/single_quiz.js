@@ -105,7 +105,7 @@ function view_quiz(question) {
         case 1:
             prompt = "What key is this?"
             $("#question").text(prompt)
-            $("#media").append(`<img src='${media}'>`)
+            $("#media").append(`<img src='${media}' width="100%">`)
             $("#buttons").append(`<a class="btn btn-primary" id="check" role="button">Check</a>`)
             check()
             $("#check").css({width: "150px"})
