@@ -1,6 +1,5 @@
 $(document).ready(function(){
     display_headers(data)
-    display_remaining_data(data)
     $("#display_page_number").text("Page " + data['id'] + '/' + max)
 
     if(data['id'] == max && data['type'] == 'scales'){
