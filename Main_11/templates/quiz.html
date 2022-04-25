@@ -18,23 +18,32 @@
 
     <h1>Question {{question}}</h1>
     <p id="question"></p>
-    <!--<p>the answer is {{key}}</p>-->
-    <div id="media"><img src=""></div>
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary" for="btnradio1">{{quiz_content['choices'][0]}}</label>
-      
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio2">{{quiz_content['choices'][1]}}</label>
-      
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">{{quiz_content['choices'][2]}}</label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio4">{{quiz_content['choices'][3]}}</label>
+    <div class="row">
+        <div class="col-5">
+            <div id="media"><img src=""></div>
+        </div>
+        <div class="col-5">
+            <div class="btn-group-vertical btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">{{quiz_content['choices'][0]}}</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">{{quiz_content['choices'][1]}}</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">{{quiz_content['choices'][2]}}</label>
+        
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio4">{{quiz_content['choices'][3]}}</label>
+            </div>
+        </div>
+        <div class="col-2">
+            <div id="buttons"></div>
+        </div>
     </div>
-    <br>
-    <div id="buttons"></div>
+
+    <!--<p>the answer is {{key}}</p>-->
+
 
 
 {% endblock %}
