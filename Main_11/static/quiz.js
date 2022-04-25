@@ -5,7 +5,7 @@ $(document).ready(function() {
         case 1:
             prompt = "What key is this?"
             $("#question").text(prompt)
-            $("#media").append(`<img src='${media}'>`)
+            $("#media").append(`<img src='${media}' width="100%">`)
             $("#buttons").append(`<a class="btn btn-primary" href="/quiz/2" role="button">Next</a>`)
             break
         case 2:
