@@ -3,14 +3,19 @@
 {% block content %}
 
     <script type="text/javascript" src="{{ url_for('static', filename = 'results.js') }}"></script>
-
     <script>
         correct = {{correct}}
     </script>
-
-    <h1>You got {{correct}} question(s) right.</h1>
-    <div>
-        Thanks for learning with us, and keep learning music!
+    <div class="app-container">
+        <div class="title">
+            <h1>You got {{correct}} question(s) right.</h1>
+            <br>
+            Thanks for learning with us, and keep learning music!
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button type="button" class="btn btn-primary" href="/home">Homepage</button>
+            <button type="button" class="btn btn-primary" href="/quiz">Quiz Again</button>
+        </div>
     </div>
-    <div id="buttons"></div>
 {% endblock %}
