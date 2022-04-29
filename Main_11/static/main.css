@@ -46,3 +46,8 @@
     font-family: Verdana, Helvetica, sans-serif;
     font-size: larger;
 }
+
+.when_hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
