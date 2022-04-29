@@ -11,47 +11,64 @@
     </script>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-12" id="name_here"></div>
-        </div>
-        <div id="data_points">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-6" id="ui_here">
-                    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA3rbh0KePlOJ7pM4g5BdlohXoZf-2AEZwnLFXKnqGlKgVtiA7WineblpHsq8hQs3tpKc&usqp=CAU" width="100%">
-                    <br>-->
-                </div>
-                <div class="col-4" id="details_here">
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
         <div id="move_buttons">
             <button id="prev_button" type="button">Previous</button>
             <span id="display_page_number"></span>
             <button id="next_button" type="button">Next</button>
         </div>
-
-        
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center" id="name_here" style="font-weight: bold;font-size: 30px;line-height: 300%;"></div>
+        </div>
+        <div id="data_points">
+            <div class="row justify-content-center">
+                <div class="col-5" id="ui_here">
+                    <img src="../static/learn/Gmajor.png" width="100%">
+                    <br>
+                </div>
+                <div class="col-5" id="details_here">
+                    <p id="description1"></p>
+                    <p id="description2"></p>
+                    <p id="description3"></p>
+                </div>
+            </div>
+        </div>
         <br>
+        <p>ORANGE keys are those notes being raised or lowered. BLUE keys are the results (and the ones that actually in this key).</p>
         <div id="white-keys">
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
-            <button class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="c3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="d3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="e3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="f3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="g3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="a4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="b4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+
+            <button id="c4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="d4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="e4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="f4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="g4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="a5" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="b5" class="key" style="width:30px;height:120px;background-color:white;"></button>
+            <button id="c5" class="key" style="width:30px;height:120px;background-color:white;"></button>
         </div>
         <div id="black-keys" style="margin: -123px 17px;">
-            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
-            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="cSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="dSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
             <button class="key" style="width:30px;height:80px;background-color:transparent; border-color:transparent;" disabled></button>
-            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
-            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
-            <button class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="fSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="gSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="aSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button class="key" style="width:30px;height:80px;background-color:transparent; border-color:transparent;" disabled></button>
+
+            <button id="cSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="dSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button class="key" style="width:30px;height:80px;background-color:transparent; border-color:transparent;" disabled></button>
+            <button id="fSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="gSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+            <button id="aSharp5" class="key" style="width:30px;height:80px;background-color:black;"></button>
         </div>
+
     </div>
 
 {% endblock %}
