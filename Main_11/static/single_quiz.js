@@ -187,5 +187,17 @@ $(document).ready(function() {
     question = 1
     num_correct = 0
     view_quiz(question)
+
+    $("#hint").hover(
+        function() {
+            $(this).addClass("when_hover")
+        },
+        function() {
+            $(this).removeClass("when_hover")
+        }
+    )
+    $(function(){
+        $(document).tooltip();
+      });
     
 })
