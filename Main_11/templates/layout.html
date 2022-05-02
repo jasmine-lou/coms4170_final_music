@@ -1,54 +1,46 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" href="data:,">
+<html>
+    <head>
+        {% block head %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7007/7007020.png">
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- bootstrap same as before -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <!-- JS and CSS file index -->
+        <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+        <script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script>
+        <!-- Too many styles, not all of them were in main.css -->
 
-<!-- jquery -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        {% endblock head %}
+    </head>
 
-  <script>
-    /*let search_results = {{search_results}}*/
-  </script>
+    <body>
+        <!-- Navbar referrence: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <!-- Search box referrence: https://getbootstrap.com/docs/4.0/components/buttons/ -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7007/7007064.png" width="30" height="30" class="d-inline-block align-top" alt="website Zelda Weapons Pedia">
+                    Zelda Weapons Pedia
+                </a>
+                <a href="/create">Create New Weapon Page!</a>
+                <form class="form-inline" id="search-form">
+                    <input id="search-box" class="form-control mr-sm-2 " type="search" placeholder="#Search by weapon name" aria-label="Search" required>
+                    <button id="search-btn" class="btn btn-primary my-2 my-sm-0" alt="search button">Go</button>
+                </form>
+            </div>
+        </nav>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-
-
-
-    <title>Music Theory!</title>
-  </head>
-  <body class="fill">
-    
-
-    
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand font-standard" href="/"><h1>Music Theory</h1></a>
-
-      <div class="navbar-nav p-2 round_corners">
-        <a class="navbar-brand font-standard" href="/notes/1">Learn Notes</a>
-        <a class="navbar-brand font-standard" href="/keys/1">Learn Keys</a>
-        <a class="navbar-brand font-standard" href="/scales/1">Learn Scales</a>
-        <a class="nav-item nav-link font-standard" href="/quiz">Quiz</a>
-      </div>
-
-  </div>
-</nav>
-
-    <div class="container p-5 round_corners">   
-        {% block content %}
-        {% endblock %}
-    </div>
-
-  </body>
+        <div id="content" class="container">
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+    </body>
 </html>
