@@ -377,6 +377,10 @@ function display_headers(data){
     $("#description2").append(data["description2"]);
     $("#description3").append(data["description3"]);
 
+    $("#explanation").attr("src", data["explanation"]);
+
+    $("#keyboardNote").append(data["keyboardNote"]);
+
     for (let i = 0; i < data["blueKeys"].length; i++){
         $("#" + data["blueKeys"][i]).css("background-color", "#0063C6");
     }
