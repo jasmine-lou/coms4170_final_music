@@ -81,7 +81,12 @@ function view_quiz(question) {
     let media = quiz_content[question-1]["key_media"]
     choices = quiz_content[question-1]["choices"]
     answer = quiz_content[question-1]["answer"]
-    console.log(typeof quiz_content[1])
+    let hint = quiz_content[question-1]["hint"]
+    // console.log(typeof quiz_content[1])
+    console.log(hint)
+
+    // change hint 
+    $("#hint-href").attr("title", hint)
 
     // clear page before displaying
     $("#question").text("")
@@ -158,6 +163,11 @@ function view_quiz(question) {
             $("#option_2").text(choices[1])
             $("#option_3").text(choices[2])
             $("#option_4").text(choices[3])
+
+            // tooltip
+            $("#hint-href").tooltip({
+                content: `<img style="width:250px;" src=${hint} />`
+            });
             break
         case 4:
             prompt = "What key is this melody in?"
@@ -176,6 +186,11 @@ function view_quiz(question) {
             $("#option_2").text(choices[1])
             $("#option_3").text(choices[2])
             $("#option_4").text(choices[3])
+
+            // tooltip
+            $("#hint-href").tooltip({
+                content: `<img style="width:250px;" src="${hint}" />`
+            });
             break
         default:
             console.log(`hi.`);
@@ -196,8 +211,18 @@ $(document).ready(function() {
             $(this).removeClass("when_hover")
         }
     )
-    $(function(){
-        $(document).tooltip();
+    $("#hint-href").tooltip({
+        show: null,
+        position: {
+          my: "left top",
+          at: "left bottom"
+        },
+        open: function( event, ui ) {
+          ui.tooltip.animate({ top: ui.tooltip.position().top + 10 }, "fast" );
+        }
       });
+    /*$(function(){
+        $(document).tooltip();
+      });*/
     
 })

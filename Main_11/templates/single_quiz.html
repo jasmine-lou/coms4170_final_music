@@ -3,6 +3,7 @@
 {% block content %}
 
     <script type="text/javascript" src="{{ url_for('static', filename = 'single_quiz.js') }}"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
     <script>
         // quiz content json from flask
@@ -17,6 +18,8 @@
         console.log(typeof quiz_content)
     </script>
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
     <h1 id="head"></h1>
     <div class="app-container">
         <div class="container">
@@ -25,9 +28,9 @@
                     <div class="row">
                         <p id="question" class="question col-10"></p>
                         <div id="hint" class="col-2 title">
-                            <a href="#" title="That&apos;s the Hint">
+                            <a id="hint-href" href="#" title="That&apos;s the Hint">
                                 <img src="../static/lightbulb.png" alt="hint" id="hint_img" width="40px" height="40px">
-                                <div class="font-standard">Hint</div>
+                                <div class="font-standard">Hover for hint</div>
                             </a>
                         </div>
                     </div>
