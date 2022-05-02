@@ -89,108 +89,283 @@ $(document).ready(function(){
     $("#cSharp3").click(function() {
         cSharp3Note.currentTime = 0;
         cSharp3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("C# Db");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#dSharp3").click(function() {
         dSharp3Note.currentTime = 0;
         dSharp3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("D# Eb");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#fSharp3").click(function() {
         fSharp3Note.currentTime = 0;
         fSharp3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("F# Gb");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#gSharp3").click(function() {
         gSharp3Note.currentTime = 0;
         gSharp3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("G# Ab");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#aSharp4").click(function() {
         aSharp4Note.currentTime = 0;
         aSharp4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("A# Bb");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
 
     // =============
     $("#cSharp4").click(function() {
         cSharp4Note.currentTime = 0;
         cSharp4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("C# Db");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#dSharp4").click(function() {
         dSharp4Note.currentTime = 0;
         dSharp4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("D# Eb");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#fSharp4").click(function() {
         fSharp4Note.currentTime = 0;
         fSharp4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("F# Gb");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#gSharp4").click(function() {
         gSharp4Note.currentTime = 0;
         gSharp4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("G# Ab");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#aSharp5").click(function() {
         aSharp5Note.currentTime = 0;
         aSharp5Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("A# Bb");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
 
     // =============
     $("#c3").click(function() {
         c3Note.currentTime = 0;
         c3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("C");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#d3").click(function() {
         d3Note.currentTime = 0;
         d3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("D");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#e3").click(function() {
         e3Note.currentTime = 0;
         e3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("E");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#f3").click(function() {
         f3Note.currentTime = 0;
         f3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("F");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#g3").click(function() {
         g3Note.currentTime = 0;
         g3Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("G");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#a4").click(function() {
         a4Note.currentTime = 0;
         a4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("A");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#b4").click(function() {
         b4Note.currentTime = 0;
         b4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("B");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     // =============
 
     $("#c4").click(function() {
         c4Note.currentTime = 0;
         c4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("C");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#d4").click(function() {
         d4Note.currentTime = 0;
         d4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("D");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#e4").click(function() {
         e4Note.currentTime = 0;
         e4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("E");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#f4").click(function() {
         f4Note.currentTime = 0;
         f4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("F");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#g4").click(function() {
         g4Note.currentTime = 0;
         g4Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("G");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#a5").click(function() {
         a5Note.currentTime = 0;
         a5Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("A");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#b5").click(function() {
         b5Note.currentTime = 0;
         b5Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("B");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
     $("#c5").click(function() {
         c5Note.currentTime = 0;
         c5Note.play();
+        $("#keyName").css("background-color", $(this).css("background-color"));
+        $("#keyName").text("C");
+        if ($(this).css("background-color") == "rgb(255, 255, 255)"){
+            $("#keyName").css("color", "black");
+        } else {
+            $("#keyName").css("color", "white");
+        }
     })
 
 })
