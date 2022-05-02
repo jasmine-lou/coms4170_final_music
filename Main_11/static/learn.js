@@ -46,11 +46,19 @@ $(document).ready(function(){
         $("#next_button").text("Learn Scales!")
     }
 
+    if(data['id'] == max && data['type'] == 'notes'){
+        $("#next_button").empty()
+        $("#next_button").text("Learn Keys!")
+    }
+
     $("#next_button").click(function () {
         if(data['id'] < max){
             window.location.replace('http://127.0.0.1:5000/' + String(data['type']) + '/' + String(data['id'] + 1))
         }
         else{
+            if(data['type'] == 'notes'){
+                window.location.replace('http://127.0.0.1:5000/keys/1')
+            }
             if(data['type'] == 'keys'){
                 window.location.replace('http://127.0.0.1:5000/scales/1')
             }
@@ -67,6 +75,9 @@ $(document).ready(function(){
         else{
             if (data['type'] == 'scales'){
                 window.location.replace('http://127.0.0.1:5000/keys/4')
+            }
+            if (data['type'] == 'keys'){
+                window.location.replace('http://127.0.0.1:5000/notes/4')
             }
             else {
                 alert('this is the first item')
