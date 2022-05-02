@@ -83,4 +83,12 @@ questions = {
             "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B-flat-major_g-minor.svg/800px-B-flat-major_g-minor.svg.png",
         },
     },
+    "q5": {
+        "C": {
+            "key_media": "C major",
+            "choices": ["G", "C", "Ab", "F#"],
+            "answer": ["C", "D", "E", "F", "G", "A", "B", "C"],
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/C-major_a-minor.svg/1920px-C-major_a-minor.svg.png",
+        },
+    }
 }
