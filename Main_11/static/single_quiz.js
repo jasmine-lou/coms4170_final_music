@@ -1,5 +1,207 @@
 let answer = ""
 let choices = []
+let pressed_keys = []
+let keyboard = `
+    <div id="white-keys">
+    <button id="c3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="d3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="e3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="f3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="g3" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="a4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="b4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+
+    <button id="c4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="d4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="e4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="f4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="g4" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="a5" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="b5" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    <button id="c5" class="key" style="width:30px;height:120px;background-color:white;"></button>
+    </div>
+    <div id="black-keys" style="margin: -123px 17px;">
+    <button id="cSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button id="dSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button class="key" style="width:30px;height:80px;background-color:transparent; border-color:transparent;" disabled></button>
+    <button id="fSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button id="gSharp3" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button id="aSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button class="key" style="width:30px;height:80px;background-color:transparent; border-color:transparent;" disabled></button>
+
+    <button id="cSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button id="dSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button class="key" style="width:30px;height:80px;background-color:transparent; border-color:transparent;" disabled></button>
+    <button id="fSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button id="gSharp4" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    <button id="aSharp5" class="key" style="width:30px;height:80px;background-color:black;"></button>
+    </div>`
+
+let c3Note = new Audio("../static/mp3Notes/c3.mp3");
+let d3Note = new Audio("../static/mp3Notes/d3.mp3");
+let e3Note = new Audio("../static/mp3Notes/e3.mp3");
+let f3Note = new Audio("../static/mp3Notes/f3.mp3");
+let g3Note = new Audio("../static/mp3Notes/g3.mp3");
+let a4Note = new Audio("../static/mp3Notes/a4.mp3");
+let b4Note = new Audio("../static/mp3Notes/b4.mp3");
+    
+let c4Note = new Audio("../static/mp3Notes/c4.mp3");
+let d4Note = new Audio("../static/mp3Notes/d4.mp3");
+let e4Note = new Audio("../static/mp3Notes/e4.mp3");
+let f4Note = new Audio("../static/mp3Notes/f4.mp3");
+let g4Note = new Audio("../static/mp3Notes/g4.mp3");
+let a5Note = new Audio("../static/mp3Notes/a5.mp3");
+let b5Note = new Audio("../static/mp3Notes/b5.mp3");
+let c5Note = new Audio("../static/mp3Notes/c5.mp3");
+    
+let cSharp3Note = new Audio("../static/mp3Notes/c-3.mp3");
+let dSharp3Note = new Audio("../static/mp3Notes/d-3.mp3");
+let fSharp3Note = new Audio("../static/mp3Notes/f-3.mp3");
+let gSharp3Note = new Audio("../static/mp3Notes/g-3.mp3");
+let aSharp4Note = new Audio("../static/mp3Notes/a-4.mp3");
+    
+let cSharp4Note = new Audio("../static/mp3Notes/c-4.mp3");
+let dSharp4Note = new Audio("../static/mp3Notes/d-4.mp3");
+let fSharp4Note = new Audio("../static/mp3Notes/f-4.mp3");
+let gSharp4Note = new Audio("../static/mp3Notes/g-4.mp3");
+let aSharp5Note = new Audio("../static/mp3Notes/a-5.mp3");
+
+function activate_keyboard() {
+    // ============
+    $("#cSharp3").on("click", function() {
+        pressed_keys.push("C#")
+        cSharp3Note.currentTime = 0;
+        cSharp3Note.play();
+    })
+    $("#dSharp3").on("click", function() {
+        pressed_keys.push("D#")
+        dSharp3Note.currentTime = 0;
+        dSharp3Note.play();
+    })
+    $("#fSharp3").on("click", function() {
+        pressed_keys.push("F#")
+        fSharp3Note.currentTime = 0;
+        fSharp3Note.play();
+    })
+    $("#gSharp3").on("click", function() {
+        pressed_keys.push("G#")
+        gSharp3Note.currentTime = 0;
+        gSharp3Note.play();
+    })
+    $("#aSharp4").on("click", function() {
+        pressed_keys.push("A#")
+        aSharp4Note.currentTime = 0;
+        aSharp4Note.play();
+    })
+
+    // =============
+    $("#cSharp4").on("click", function() {
+        pressed_keys.push("C#")
+        cSharp4Note.currentTime = 0;
+        cSharp4Note.play();
+    })
+    $("#dSharp4").on("click", function() {
+        pressed_keys.push("D#")
+        dSharp4Note.currentTime = 0;
+        dSharp4Note.play();
+    })
+    $("#fSharp4").on("click", function() {
+        pressed_keys.push("F#")
+        fSharp4Note.currentTime = 0;
+        fSharp4Note.play();
+    })
+    $("#gSharp4").on("click", function() {
+        pressed_keys.push("G#")
+        gSharp4Note.currentTime = 0;
+        gSharp4Note.play();
+    })
+    $("#aSharp5").on("click", function() {
+        pressed_keys.push("A#")
+        aSharp5Note.currentTime = 0;
+        aSharp5Note.play();
+    })
+
+    // =============
+    $("#c3").on("click", function() {
+
+        pressed_keys.push("C")
+        c3Note.currentTime = 0;
+        c3Note.play();
+    })
+    $("#d3").on("click", function() {
+        pressed_keys.push("D")
+        d3Note.currentTime = 0;
+        d3Note.play();
+    })
+    $("#e3").on("click", function() {
+        pressed_keys.push("E")
+        e3Note.currentTime = 0;
+        e3Note.play();
+    })
+    $("#f3").on("click", function() {
+        pressed_keys.push("F")
+        f3Note.currentTime = 0;
+        f3Note.play();
+    })
+    $("#g3").on("click", function() {
+        pressed_keys.push("G")
+        g3Note.currentTime = 0;
+        g3Note.play();
+    })
+    $("#a4").on("click", function() {
+        pressed_keys.push("A")
+        a4Note.currentTime = 0;
+        a4Note.play();
+    })
+    $("#b4").on("click", function() {
+        pressed_keys.push("B")
+        b4Note.currentTime = 0;
+        b4Note.play();
+    })
+    // =============
+
+    $("#c4").on("click", function() {
+        pressed_keys.push("C")
+        c4Note.currentTime = 0;
+        c4Note.play();
+    })
+    $("#d4").on("click", function() {
+        pressed_keys.push("D")
+        d4Note.currentTime = 0;
+        d4Note.play();
+    })
+    $("#e4").on("click", function() {
+        pressed_keys.push("E")
+        e4Note.currentTime = 0;
+        e4Note.play();
+    })
+    $("#f4").on("click", function() {
+        pressed_keys.push("F")
+        f4Note.currentTime = 0;
+        f4Note.play();
+    })
+    $("#g4").on("click", function() {
+        pressed_keys.push("G")
+        g4Note.currentTime = 0;
+        g4Note.play();
+    })
+    $("#a5").on("click", function() {
+        pressed_keys.push("A")
+        a5Note.currentTime = 0;
+        a5Note.play();
+    })
+    $("#b5").on("click", function() {
+        pressed_keys.push("B")
+        b5Note.currentTime = 0;
+        b5Note.play();
+    })
+    $("#c5").on("click", function() {
+        pressed_keys.push("C")
+        c5Note.currentTime = 0;
+        c5Note.play();
+    })
+
+}
 
 // reused "check" onclick code
 function check() {
