@@ -53,31 +53,75 @@ keys = {
     },
 }
 
+notes_max = 4
+notes = {
+    "1": {
+        "id": 1,
+        "title": "Learn G NOTE",
+        "type": "notes",
+        "description1": "The key signature of G major has ONE sharp.",
+        "blueKeys": ["fSharp3", "fSharp4"],
+        "orangeKeys": ["f3", "f4"],
+    },
+    "2": {
+        "id": 2,
+        "title": "Learn F NOTE",
+        "type": "notes",
+        "description1": "The key signature of F major has ONE flat.",
+        "blueKeys": ["aSharp4", "aSharp5"],
+        "orangeKeys": ["b4", "b5"],
+    },
+    "3": {
+        "id": 3,
+        "title": "Learn D NOTE",
+        "type": "notes",
+        "description1": "The key signature of D major has TWO sharps.",
+        "blueKeys": ["fSharp3", "fSharp4", "cSharp3", "cSharp4", "cSharp5"],
+        "orangeKeys": ["f3", "f4", "c3", "c4"],
+    },
+    "4": {
+        "id": 4,
+        "title": "Learn Bb NOTE",
+        "type": "notes",
+        "description1": "The key signature of Bb major has TWO flats.",
+        "blueKeys": ["aSharp4", "aSharp5", "dSharp3", "dSharp4"],
+        "orangeKeys": ["b4", "b5", "e3", "e4"],
+    },
+}
+
 scales_max = 4
 scales = {
     "1": {
         "id": 1,
         "title": "Learn G Major Scale",
         "type": "scales",
-        "description": "GMajorDescription",
+        "description1": "GMajorDescription",
+        "blueKeys": ["aSharp4", "aSharp5", "dSharp3", "dSharp4"],
+        "orangeKeys": ["b4", "b5", "e3", "e4"],
     },
     "2": {
         "id": 2,
         "title": "Learn A Major Scale",
         "type": "scales",
-        "description": "AMajorDescription",
+        "description1": "AMajorDescription",
+        "blueKeys": ["aSharp4", "aSharp5", "dSharp3", "dSharp4"],
+        "orangeKeys": ["b4", "b5", "e3", "e4"],
     },
     "3": {
         "id": 3,
         "title": "Learn B Major Scale",
         "type": "scales",
-        "description": "BMajorDescription",
+        "description1": "BMajorDescription",
+        "blueKeys": ["aSharp4", "aSharp5", "dSharp3", "dSharp4"],
+        "orangeKeys": ["b4", "b5", "e3", "e4"],
     },
     "4": {
         "id": 4,
         "title": "Learn E Major Scale",
         "type": "scales",
-        "description": "EMajorDescription",
+        "description1": "EMajorDescription",
+        "blueKeys": ["aSharp4", "aSharp5", "dSharp3", "dSharp4"],
+        "orangeKeys": ["b4", "b5", "e3", "e4"],
     },
 }
 
@@ -85,6 +129,13 @@ scales = {
 @app.route("/")
 def base_url():
     return redirect("/home")
+
+
+@app.route("/notes/<id>")
+def notes_route(id=None):
+    global notes
+    datas = notes[id]
+    return render_template("learn.html", data=[datas, notes_max])
 
 
 @app.route("/keys/<id>")
