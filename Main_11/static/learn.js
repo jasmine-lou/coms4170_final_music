@@ -80,7 +80,7 @@ $(document).ready(function(){
                 window.location.replace('http://127.0.0.1:5000/notes/4')
             }
             else {
-                alert('this is the first item')
+                alert('This is the first item!')
             }
         }
     })
