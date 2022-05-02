@@ -23,7 +23,7 @@
             <div id="data_points">
                 <div class="row justify-content-center font-standard">
                     <div class="col-5" id="ui_here">
-                        <img src="../static/learn/Gmajor.png" width="100%">
+                        <img id="explanation" width="100%">
                         <br>
                     </div>
                     <div class="col-5 font-standard" id="details_here">
@@ -39,13 +39,13 @@
                     Try it on this keyboard!
                 </div>
                 <div class="col-10">
-                    <p>ORANGE keys are those notes being raised or lowered. BLUE keys are the results (and the ones that actually in this key).</p>
+                    <p id="keyboardNote"></p>
                     <p>You can see the key you just clicked on the right.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-8">
+                <div class="col-9">
                     <div id="white-keys">
                         <button id="c3" class="key" style="width:30px;height:120px;background-color:white;"></button>
                         <button id="d3" class="key" style="width:30px;height:120px;background-color:white;"></button>
@@ -81,7 +81,7 @@
                         <button id="aSharp5" class="key" style="width:30px;height:80px;background-color:black;"></button>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-1">
                     <button id="keyName" class="key" style="width:60px;height:120px;background-color:white; font-size: 30px; word-wrap: break-word;" disabled></button>
                 </div>
                 <div class="col-1"></div>
