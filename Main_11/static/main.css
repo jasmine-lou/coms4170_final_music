@@ -58,11 +58,15 @@
 #details_here{
     background-color:#ffedd8;
     border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 #piano_section{
     background-color:#dfefff;
     border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 /*
 .when_hover {
