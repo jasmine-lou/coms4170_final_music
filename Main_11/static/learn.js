@@ -74,13 +74,16 @@ $(document).ready(function(){
         }
         else{
             if (data['type'] == 'scales'){
-                window.location.replace('http://127.0.0.1:5000/keys/4')
+                window.location.replace('http://127.0.0.1:5000/keys/5')
             }
             if (data['type'] == 'keys'){
-                window.location.replace('http://127.0.0.1:5000/notes/4')
+                window.location.replace('http://127.0.0.1:5000/notes/5')
+            }
+            if (data['type'] == 'notes') {
+                alert('This is the first item!')
             }
             else {
-                alert('This is the first item!')
+                console.log("Error item")
             }
         }
     })
