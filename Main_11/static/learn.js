@@ -381,6 +381,7 @@ function display_headers(data){
     $("#description3").append(data["description3"]);
 
     $("#explanation").attr("src", data["explanation"]);
+    $("#explanation").css("border-radius", "5px");
 
     $("#keyboardNote").append(data["keyboardNote"]);
 

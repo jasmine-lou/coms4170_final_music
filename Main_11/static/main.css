@@ -51,8 +51,18 @@
 
 #homepageBackground{
     background-image: url("../static/homepageBackground.jpeg");
-    height: 600px;
-    padding: 200px 100px;
+    padding: 200px 80px;
+    margin: auto;
+}
+
+#details_here{
+    background-color:#ffedd8;
+    border-radius: 5px;
+}
+
+#piano_section{
+    background-color:#dfefff;
+    border-radius: 5px;
 }
 /*
 .when_hover {

@@ -27,6 +27,7 @@
                         <br>
                     </div>
                     <div class="col-5 font-standard" id="details_here">
+                        <br>
                         <p id="description1"></p>
                         <p id="description2"></p>
                         <p id="description3"></p>
@@ -34,15 +35,22 @@
                 </div>
             </div>
             <br>
+        </div>
+        <div class="container col-md-10" id="piano_section">
             <div class="row justify-content-center font-standard">
-                <div class="col-md-10 text-center font-standard" style="font-weight: bold;font-size: 20px;line-height: 300%; color: grey;">
+                <div class="col-md-10 text-center font-standard" style="font-weight: bold;font-size: 20px;line-height: 300%; color: #0063C6;">
                     Try it on this keyboard!
                 </div>
-                <div class="col-10">
-                    <p id="keyboardNote"></p>
-                    <p>You can see the key you just clicked on the right.</p>
+                <div class="col-md-10" id="keyboardNote">
                 </div>
             </div>
+            <br>
+            <div class="row justify-content-center font-standard">
+                <div class="col-md-10 text-right font-standard" style="color:rgb(128, 128, 128);text-align: right;">
+                    This is the key you just clicked.
+                </div>
+            </div>
+            <br>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-9">
@@ -86,6 +94,7 @@
                 </div>
                 <div class="col-1"></div>
             </div>
+            <br>
         </div>
     </div>
 {% endblock %}
