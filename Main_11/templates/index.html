@@ -4,19 +4,20 @@
 
     <script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
 
-    <div class="app-container">
+    <div class="app-container" id="homepageBackground" >
         <div class="title">
-            <h1>Learning music with us!!</h1>
+            <h1>Learn music with us!</h1>
         </div>
         <br>
-        <div class="font-standard" style="text-align:center">
+        <div class="font-standard" style="text-align:right">
             Try learning basic music theory including<br>
             "Notes, Keys and Scales"<br>
-            Click Start Learning button to begin with our journey :)
+            Click on the Start Learning button to begin our journey :)
         </div>
         <br>
-        <div style="text-align:center">
-            <button id="start_button" type="button" class="btn btn-primary">Start Learning!</button>
+        <br>
+        <div style="text-align:right">
+            <button id="start_button" type="button" class="btn btn-primary btn-lg">Start Learning!</button>
         </div>
     </div>
 {% endblock %}

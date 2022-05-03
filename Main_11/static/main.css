@@ -36,7 +36,7 @@
 }
 
 .title{
-    text-align: center;
+    text-align: right;
     font-family: Verdana, Helvetica, sans-serif;
 }
 
@@ -47,6 +47,12 @@
 .question{
     font-family: Verdana, Helvetica, sans-serif;
     font-size: larger;
+}
+
+#homepageBackground{
+    background-image: url("../static/homepageBackground.jpeg");
+    height: 600px;
+    padding: 200px 100px;
 }
 /*
 .when_hover {
