@@ -86,9 +86,33 @@ questions = {
     "q5": {
         "C": {
             "key_media": "C major",
-            "choices": ["G", "C", "Ab", "F#"],
+            "choices": [],
             "answer": ["C", "D", "E", "F", "G", "A", "B", "C"],
             "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/C-major_a-minor.svg/1920px-C-major_a-minor.svg.png",
+        },
+        "D": {
+            "key_media": "D major",
+            "choices": [],
+            "answer": ["D", "E", "F#", "G", "A", "B", "C#", "D"],
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/D-major_b-minor.svg/440px-D-major_b-minor.svg.png",
+        },
+        "Bb": {
+            "key_media": "Bb major",
+            "choices": [],
+            "answer": ["A#", "C", "D", "D#", "F", "G", "A", "A#"],
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B-flat-major_g-minor.svg/440px-B-flat-major_g-minor.svg.png",
+        },
+        "G": {
+            "key_media": "G major",
+            "choices": [],
+            "answer": ["G", "A", "B", "C", "D", "E", "F#", "G"],
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/G-major_e-minor.svg/440px-G-major_e-minor.svg.png",
+        },
+        "F": {
+            "key_media": "F major",
+            "choices": [],
+            "answer": ["F", "G", "A", "A#", "C", "D", "E", "F"],
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/F-major_d-minor.svg/440px-F-major_d-minor.svg.png",
         },
     }
 }
