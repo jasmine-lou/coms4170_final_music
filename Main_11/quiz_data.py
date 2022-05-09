@@ -25,6 +25,24 @@ questions = {
             "answer": "Bb",
             "hint": "It has a flat in the tonic note!",
         },
+        "C": {
+            "key_media": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/C-major_a-minor.svg/1920px-C-major_a-minor.svg.png",
+            "choices": ["G", "C", "Ab", "F#"],
+            "answer": "C",
+            "hint": "This is the middle note on the keyboard.",
+        },
+        "D": {
+            "key_media": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/D-major_b-minor.svg/440px-D-major_b-minor.svg.png",
+            "choices": ["Eb", "Bb", "F", "D"],
+            "answer": "D",
+            "hint": "The tonic note has no accidentals!",
+        },
+        "F": {
+            "key_media": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/F-major_d-minor.svg/440px-F-major_d-minor.svg.png",
+            "choices": ["Eb", "Bb", "F", "D"],
+            "answer": "F",
+            "hint": "The tonic note has no accidentals!",
+        },
     },
     # make denoted key
     "q2": {
@@ -67,6 +85,24 @@ questions = {
             "answer": "Bb",
             "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B-flat-major_g-minor.svg/800px-B-flat-major_g-minor.svg.png",
         },
+        "C": {
+            "key_media": "https://upload.wikimedia.org/score/a/z/azat41br3gg1onuhy0jkmcg67ipxatu/azat41br.mp3",
+            "choices": ["F", "Bb", "D", "C"],
+            "answer": "C",
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/C-major_a-minor.svg/1920px-C-major_a-minor.svg.png",
+        },
+        "D": {
+            "key_media": "https://upload.wikimedia.org/score/8/t/8tsdx6xxrgsgq0pzf4zamnhhhcu8ukh/8tsdx6xx.mp3",
+            "choices": ["Bb", "G", "D", "C"],
+            "answer": "D",
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/D-major_b-minor.svg/440px-D-major_b-minor.svg.png",
+        },
+        "F": {
+            "key_media": "https://upload.wikimedia.org/score/7/z/7ztgwg4pvf20q021xlawoz5ai4fau73/7ztgwg4p.mp3",
+            "choices": ["Eb", "Bb", "F", "D"],
+            "answer": "F",
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/F-major_d-minor.svg/440px-F-major_d-minor.svg.png",
+        },
     },
     # choose key of melody
     "q4": {
@@ -81,6 +117,24 @@ questions = {
             "choices": ["Eb", "Bb", "F", "D"],
             "answer": "Bb",
             "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/B-flat-major_g-minor.svg/800px-B-flat-major_g-minor.svg.png",
+        },
+        "C": {
+            "key_media": "/static/c_melody.mp3",
+            "choices": ["F", "Bb", "D", "C"],
+            "answer": "C",
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/C-major_a-minor.svg/1920px-C-major_a-minor.svg.png",
+        },
+        "D": {
+            "key_media": "/static/d_melody.mp3",
+            "choices": ["Bb", "G", "D", "C"],
+            "answer": "D",
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/D-major_b-minor.svg/440px-D-major_b-minor.svg.png",
+        },
+        "F": {
+            "key_media": "/static/f_melody.mp3",
+            "choices": ["Eb", "Bb", "F", "D"],
+            "answer": "F",
+            "hint": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/F-major_d-minor.svg/440px-F-major_d-minor.svg.png",
         },
     },
     "q5": {
